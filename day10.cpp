@@ -8,7 +8,7 @@ class binary
     public:
     void cal(int n)
         {
-    int rem,i=0,count=0,flag=1;
+    int rem,i=0,count=0,flag=0;
         double a[10000];
     while(n!=1)
         {
@@ -27,6 +27,12 @@ class binary
                flag++;
             }
         }
+        if(flag==0)
+        {
+          flag=flag+1;
+          cout<<flag;
+        }
+        else
     cout<<flag;
     }
 };
